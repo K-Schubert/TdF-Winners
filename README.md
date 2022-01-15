@@ -3,6 +3,13 @@ This project was initially started during my studies with R. The idea was to scr
 
 More recently, I've revisited this project with Python. Below you will find the new objectives and implementation.
 
+# Objectives
+The main objectives are:
+
+1. To retrieve data from PCS.
+2. To predict race winners (alternatively a rider's position in the final classification) for big races (e.g. TdF).
+3. Perhaps more interestingly, to predict amateur/U23/etc. non-professional rider's potential based on past results.
+
 # Web Mining
 Historical race results are scraped for UCI World Tour male riders. The goal is to retrieve data on: 
 
@@ -12,6 +19,8 @@ Historical race results are scraped for UCI World Tour male riders. The goal is 
 - UCI race importance (UWT, Pro, 1, 2)
 - rider age, weight, height
 - rider speciality
+- UCI individual, team and one day race ranking
+- PCS rider speciality ranking
 
 Another feature of interest will be race day weather. Race results will be augmented using historical weather reports. Gathering data on injuries could also add value in the future. Having access to personal rider physiological data would bring many insights as to current form and training, but this is reserved to team data scientists and coaches (which I am not!).
 
