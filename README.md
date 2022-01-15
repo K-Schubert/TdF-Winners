@@ -1,7 +1,7 @@
 # Project Description
 This project was initially started during my studies with R. The idea was to scrap "https://www.procyclingstats.com" rider results to build a predictive model based on historical race results which could predict the next Tour de France winner.
 
-More recently, I've revisited this project with Python. Below you will find the new objectives and implementation.
+More recently, I've revisited this project with Python. Below you will find the new objectives and implementation. I'd like to share the final project as an interactive dashboard to be able to visualize results, queries, predictions, etc.
 
 # Objectives
 The main objectives are:
