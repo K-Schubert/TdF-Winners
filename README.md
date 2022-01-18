@@ -15,8 +15,9 @@ Historical race results are scraped for UCI World Tour male riders. The goal is 
 
 - race results (final classification)
 - race leader jersey classification
-- race distance
-- UCI race importance (UWT, Pro, 1, 2)
+- race distance and elevation
+- UCI race categorisation (UWT, Pro, 1, 2)
+- race difficulty
 - rider age, weight, height
 - rider speciality
 - UCI individual, team and one day race ranking
@@ -24,7 +25,19 @@ Historical race results are scraped for UCI World Tour male riders. The goal is 
 
 Another feature of interest will be race day weather. Race results will be augmented using historical weather reports. Gathering data on injuries could also add value in the future. Having access to personal rider physiological data would bring many insights as to current form and training, but this is reserved to team data scientists and coaches (which I am not!).
 
-# Modelling
+# Dashboard
+A dashboard is being developed for visualizations and data analysis. A first step will be to represent a rider's seasonal results through plots which add value:
+
+- seasonal results
+- seasonal top X results
+- number of race days
+- progression of results over N seasons
+- etc.
+
+# Modelling 1
+The model will be used to predict whether a junior/neopro/U23 rider has the potential to win big races at the highest level. Based on a cross-sectional and autoregressive approach, I will first compare established pro riders progression to candidate riders. Using a clustering algorithm, the idea is to project a successful pro rider's results into a lower dimensional space and see if the candidate rider's features are clustered with the successful professional's features.
+
+# Modelling 2
 The model will be built to try and predict final race classification for a given rider. The intuition is that:
 
 - previous results from past seasons can help the model to reason about what type of races the rider excels in.
@@ -32,3 +45,6 @@ The model will be built to try and predict final race classification for a given
 - weather data can help indicate how tough a race will be, and if the rider has benefited from adverse weather conditions in the past.
 
 The type of model to generate baseline results will a classical ML model. It is most likely unfeasible to apply deep learning to this problem due to the small dataset size, but I will think of ways to augment the data.
+
+# Modelling 3
+The idea is to prepare a race calendar for professional teams wanting to avoid relegation from the World Tour or to progress up to the higher racing category by gaining enough UCI points per season. The model will be akin to the 'Knapsack' problem where one has to select the optimal combination of elements given a budget. The task here will be to target (select) the optimal races given UCI points on offer to optimize chances of gaining enough points in a season based on rider speciality and past results in a given team.
