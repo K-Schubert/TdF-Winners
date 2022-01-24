@@ -17,7 +17,7 @@ Historical race results are scraped for UCI World Tour male riders. The goal is 
 - race results (final classification)
 - race leader jersey classification
 - race distance and elevation
-- UCI race categorisation (UWT, Pro, 1, 2)
+- UCI race categorisation (UWT, Pro, 1, 2, etc.)
 - race difficulty
 - rider age, weight, height
 - rider speciality
