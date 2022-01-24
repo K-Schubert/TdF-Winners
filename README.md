@@ -36,7 +36,7 @@ A dashboard is being developed for visualizations and data analysis. A first ste
 - etc.
 
 <p align="center">
-  <img width="400" height="600" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/dash_app_screenshot.png">
+  <img width="600" height="900" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/dash_app_screenshot.png">
 </p>
 
 Then the dashboard will aim to provide insights into how established and successful professional riders have achieved their status throughout the years. Visualizations will provide information about "success trends" for top professionals (see Figure 1). Another type of visualization will focus on clustering successful riders to try and extract features of success.
