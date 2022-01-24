@@ -42,7 +42,7 @@ A dashboard (see Figure 1 for a preliminary mockup) is being developed for visua
   <em>Figure 1</em>
 </p>
 
-Then the dashboard will aim to provide insights into how established and successful professional riders have achieved their status throughout the years. Visualizations will provide information about "success trends" for top professionals (see Figure 2). Another type of visualization will focus on clustering successful riders to try and extract features of success.
+Then the dashboard will aim to provide insights into how established and successful professional riders have achieved their status throughout the years. Visualizations will provide information about "success trends" for top professionals (see Figure 2). Another type of visualization will focus on clustering successful rider's results to try and extract features of success. One can imagine clustering cross-sectional features or time-series of results.
 
 <p align="center">
   <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/uci_points_trend.png">
@@ -53,7 +53,11 @@ Then the dashboard will aim to provide insights into how established and success
 </p>
 
 # Modelling 1
-The model will be used to predict whether a junior/neopro/U23 rider has the potential to win big races at the highest level. Based on a cross-sectional and autoregressive approach, I will first compare established pro riders progression to candidate riders. Using a clustering algorithm, the idea is to project a successful pro rider's results into a lower dimensional space and see if the candidate rider's features are clustered with the successful professional's features.
+The model will be used to predict whether a junior/neopro/U23 rider has the potential to win big races at the highest level. Based on a cross-sectional (1) and time-series (2) approach, I will first compare established pro riders progression to candidate riders. 
+
+For (1), we can for example compare trends in UCI rankings progression or seasonal results for selected riders, then model these trends to extract parameters of successful progression. These parameters can then be compared to candidate riders to see if they "fit" a succesful rider's progression.
+
+For (2), we can extract cross-sectional features of many successful riders and run a clustering algoritm to determine what features contribute to a rider's success. A comparison can then be made with a candidate rider.
 
 # Modelling 2
 The model will be built to try and predict final race classification for a given rider. The intuition is that:
