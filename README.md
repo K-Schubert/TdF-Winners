@@ -27,7 +27,7 @@ Historical race results are scraped for UCI World Tour male riders. The goal is 
 Another feature of interest will be race day weather. Race results will be augmented using historical weather reports. Gathering data on injuries could also add value in the future. Having access to personal rider physiological data would bring many insights as to current form and training, but this is reserved to team data scientists and coaches (which I am not!).
 
 # Dashboard
-A dashboard is being developed for visualizations and data analysis. A first step will be to represent a rider's seasonal and career results through plots which add value:
+A dashboard (see Figure 1 for a preliminary mockup) is being developed for visualizations and data analysis. A first step will be to represent a rider's seasonal and career results through plots which add value:
 
 - seasonal results
 - seasonal wins, top 5, top 10, top 20 results
@@ -38,16 +38,19 @@ A dashboard is being developed for visualizations and data analysis. A first ste
 <p align="center">
   <img width="600" height="900" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/dash_app_screenshot.png">
 </p>
+<p align="center">
+  <em>Figure 1</em>
+</p>
 
-Then the dashboard will aim to provide insights into how established and successful professional riders have achieved their status throughout the years. Visualizations will provide information about "success trends" for top professionals (see Figure 1). Another type of visualization will focus on clustering successful riders to try and extract features of success.
+Then the dashboard will aim to provide insights into how established and successful professional riders have achieved their status throughout the years. Visualizations will provide information about "success trends" for top professionals (see Figure 2). Another type of visualization will focus on clustering successful riders to try and extract features of success.
 
 <p align="center">
   <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/uci_points_trend.png">
   <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/uci_position_trend.png">
 </p>
 <p align="center">
-  <em>Figure 1</em>
- </p>
+  <em>Figure 2</em>
+</p>
 
 # Modelling 1
 The model will be used to predict whether a junior/neopro/U23 rider has the potential to win big races at the highest level. Based on a cross-sectional and autoregressive approach, I will first compare established pro riders progression to candidate riders. Using a clustering algorithm, the idea is to project a successful pro rider's results into a lower dimensional space and see if the candidate rider's features are clustered with the successful professional's features.
