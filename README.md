@@ -53,7 +53,7 @@ Then the dashboard will aim to provide insights into how established and success
 </p>
 
 # Modelling 1
-The model will be used to predict whether a junior/neopro/U23 rider has the potential to win big races at the highest level. Based on a cross-sectional (1) and time-series (2) approach, I will first compare established pro riders progression to candidate riders. 
+The model will be used to predict whether a junior/neopro/U23 rider has the potential to win big races at the highest level. Based on a time-series (1) and cross-sectional (2) approach, I will first compare established pro riders progression to candidate riders. 
 
 For (1), we can for example compare trends in UCI rankings progression or seasonal results for selected riders, then model these trends to extract parameters of successful progression. These parameters can then be compared to candidate riders to see if they "fit" a succesful rider's progression.
 
