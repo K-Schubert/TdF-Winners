@@ -35,13 +35,15 @@ A dashboard is being developed for visualizations and data analysis. A first ste
 - progression of results over N seasons
 - etc.
 
-Then the dashboard will aim to provide insights into how established and successful professional riders have achieved their status throughout the years. Visualizations will provide information about "success trends" for top professionals (see \label{Figure 1}). Another type of visualization will focus on clustering successful riders to try and extract features of success.
+Then the dashboard will aim to provide insights into how established and successful professional riders have achieved their status throughout the years. Visualizations will provide information about "success trends" for top professionals (see Figure 1). Another type of visualization will focus on clustering successful riders to try and extract features of success.
 
 <p align="center">
   <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/uci_points_trend.png">
   <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/uci_position_trend.png">
-  <em>Figure 1</em>
 </p>
+<p align="center">
+  <em>Figure 1</em>
+ </p>
 
 # Modelling 1
 The model will be used to predict whether a junior/neopro/U23 rider has the potential to win big races at the highest level. Based on a cross-sectional and autoregressive approach, I will first compare established pro riders progression to candidate riders. Using a clustering algorithm, the idea is to project a successful pro rider's results into a lower dimensional space and see if the candidate rider's features are clustered with the successful professional's features.
