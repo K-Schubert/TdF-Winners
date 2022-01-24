@@ -38,8 +38,8 @@ A dashboard is being developed for visualizations and data analysis. A first ste
 Then the dashboard will aim to provide insights into how established and successful professional riders have achieved their status throughout the years. Visualizations will provide information about "success trends" for top professionals (see \label{Figure 1}). Another type of visualization will focus on clustering successful riders to try and extract features of success.
 
 <p align="center">
-  <img width="450" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/uci_points_trend.png">
-  <img width="450" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/uci_position_trend.png">
+  <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/uci_points_trend.png">
+  <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/uci_position_trend.png">
   <em>Figure 1</em>
 </p>
 
