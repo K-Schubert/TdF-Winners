@@ -7,9 +7,11 @@ More recently, I've revisited this project with Python. Below you will find the 
 The main objectives are:
 
 1. To retrieve data from PCS.
-2. To predict junior/U23/neopro/etc. rider potential based on past results and a clustering approach.
-3. To predict race winners (alternatively a rider's position in the final classification) for big races (e.g. TdF).
-4. To optimize race calendars and potential UCI points on offer for teams wanting to avoid relegation or climb up a racing category.
+2. Visualizations: to create an interactive dashboard for rider data, results and progression visualization.
+3. Talent Identification: to predict junior/U23/neopro/etc. rider potential.
+4. Team Performance Analysis: to analyze team performance and how new signings can influence future results.
+5. Race Winner Prediction: to predict race winners (alternatively a rider's position in the final classification) for big races (e.g. TdF).
+6. Racing Calendar Optimization: to optimize race calendars and potential UCI points on offer for teams wanting to avoid relegation or climb up a racing category.
 
 # Web Mining
 Historical race results are scraped for UCI World Tour male riders. The goal is to retrieve data on: 
