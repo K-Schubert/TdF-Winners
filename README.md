@@ -63,8 +63,8 @@ In Figure 3 and Figure 4, we can see how a rider has progressed over seasons thr
   <em>Figure 3</em>
 </p>
 <p align="center">
-  <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/mvdo_team_progression_all.png">
-  <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/mvdo_all_teams_progression_all.png">
+  <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/mvdp_team_progression_all.png">
+  <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/mvdp_all_teams_progression_all.png">
 </p>
 <p align="center">
   <em>Figure 4</em>
