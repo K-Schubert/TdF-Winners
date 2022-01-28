@@ -74,7 +74,7 @@ In Figure 3 and Figure 4, we can see how a rider has progressed over seasons thr
 We can also determine which teams have helped riders develop and climb the rankings the most for a sample of riders (Figure 5, top 20 best and worst teams). We see that some teams contribute to rider success a lot more than others for a sample of n=100 top riders. The next step could be to include team size (e.g. via team budget) to remove this component from the analysis and extract teams with the best structures for athlete progression.
 
 <p align="center">
-  <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/avg_progression_per_team.png">
+  <img width="600" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/avg_progression_per_team.png">
 </p>
 <p align="center">
   <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/avg_progression_per_team_top20.png">
