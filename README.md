@@ -38,7 +38,7 @@ A dashboard (see Figure 1 for a preliminary mockup) is being developed for visua
 - etc.
 
 <p align="center">
-  <img width="600" height="900" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/dash_app_screenshot.png">
+  <img width="900" height="1000" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/dash_app_screenshot.png">
 </p>
 <p align="center">
   <em>Figure 1</em>
