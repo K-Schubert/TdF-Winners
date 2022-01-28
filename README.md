@@ -32,8 +32,7 @@ Another feature of interest will be race day weather. Race results will be augme
 A dashboard (see Figure 1 for a preliminary mockup) is being developed for visualizations and data analysis. A first step will be to represent a rider's seasonal and career results through plots which add value:
 
 - seasonal results
-- seasonal wins, podiums top 5, top 10, top 20 results
-- top X result conversion rate (e.g. #wins / #top 10)
+- seasonal wins, top 5, top 10, top 20 results
 - number of race days
 - progression of results over N seasons
 - etc.
