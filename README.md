@@ -33,7 +33,7 @@ A dashboard (see Figure 1 for a preliminary mockup) is being developed for visua
 
 - seasonal results
 - seasonal wins, podiums top 5, top 10, top 20 results
-- top X result conversion rate (e.g. #top X / #wins)
+- top X result conversion rate (e.g. #wins / #top 10)
 - number of race days
 - progression of results over N seasons
 - etc.
