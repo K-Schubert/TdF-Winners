@@ -54,7 +54,9 @@ Then the dashboard will aim to provide insights into how established and success
   <em>Figure 2</em>
 </p>
 
-In Figure 3 and Figure 4, we can see how a rider has progressed over seasons through his seasonal PCS points with different teams. Figure 3 compares his progression in his current team to his entire career with trendlines. This can help analyze how potential contract changes (signing from a small team to a larger budget team) can affect performance. It has often been the case that riders underperform after a breakout season and signing to a larger team (see this [article](https://beyondthepeloton.substack.com/p/2021-rider-previews-preview-who-will)). Figure 4 shows how many points were won or lost on average per team by modelling rider results with linear regression (left figure indicates all teams, right figure considers a change of title sponsor is not equal to a team change). We can also determine which teams have helped riders develop and climb the rankings the most for a large sample of riders (Figure 5, coming soon). I propose a metric called *team progression index* or *TPI* to compare rider progression between teams (Table 1, coming soon).
+In Figure 3 and Figure 4, we can see how a rider has progressed over seasons through his seasonal PCS points with different teams. Figure 3 compares his progression in his current team to his entire career with trendlines. This can help analyze how potential contract changes (signing from a small team to a larger budget team) can affect performance. It has often been the case that riders underperform after a breakout season and signing to a larger team (see this [article](https://beyondthepeloton.substack.com/p/2021-rider-previews-preview-who-will)). Figure 4 shows how many points were won or lost on average per team by modelling rider results with linear regression (left figure indicates all teams, right figure considers a change of title sponsor is not equal to a team change). We can also determine which teams have helped riders develop and climb the rankings the most for a sample of riders (Figure 5, top 20 best and worst teams). We see that some teams contribute to rider success a lot more than others for a sample of n=100 top riders. The next step could be to include team size (e.g. via team budget) to remove this component from the analysis and extract teams with the best structures for athlete progression.
+
+Next I propose a metric called *team progression index* or *TPI* to compare rider progression between teams (Table 1, coming soon).
 
 <p align="center">
   <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/mvdp_points_progression.png">
@@ -62,12 +64,24 @@ In Figure 3 and Figure 4, we can see how a rider has progressed over seasons thr
 <p align="center">
   <em>Figure 3</em>
 </p>
+
 <p align="center">
   <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/mvdp_team_progression.png">
   <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/mvdp_all_teams_progression.png">
 </p>
 <p align="center">
   <em>Figure 4</em>
+</p>
+
+<p align="center">
+  <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/avg_progression_per_team.png">
+</p>
+<p align="center">
+  <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/avg_progression_per_team_top20.png">
+  <img width="400" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/avg_progression_per_team_worst20.png">
+</p>
+<p align="center">
+  <em>Figure 5</em>
 </p>
 
 # Modelling 1
