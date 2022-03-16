@@ -108,10 +108,10 @@ This model relies on hand-crafted features: number of wins, top 3s, top 5s, etc.
 Below are some results for the Giro 2021 with a sample of riders from the startlist:
 
 <p align="center">
-  <img width="600" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/giro_expert_1.png">
+  <img width="600" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/oldmac/media/giro_expert_1.png">
 </p>
 <p align="center">
-  <img width="600" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/giro_expert_2.png">
+  <img width="600" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/oldmac/media/giro_expert_2.png">
 </p>
 <p align="center">
   <em>Figure 6</em>
