@@ -93,14 +93,43 @@ For (1), we can for example compare trends in UCI rankings progression or season
 
 For (2), we can extract cross-sectional features of many successful riders and run a clustering algoritm to determine what features contribute to a rider's success. A comparison can then be made with a candidate rider.
 
-# Modelling 2
-The model will be built to try and predict final race classification for a given rider. The intuition is that:
+# Modelling 2: Predict Race Winners
+A series of prediction models will be built to try and predict final race classification for a given rider. Starting with a so-called "Expert model", the idea is to build more powerful models which can incorporate more and more useful data.
+
+### The Expert Model
+This model relies on hand-crafted features: number of wins, top 3s, top 5s, etc. which are computed for a given rider during a pre-specified timeframe. The workflow goes as follows:
+
+- Select an event (eg. Giro d'Italia 2021)
+- Get the rider startlist
+- Select a timeframe for which to compute top win statistics (eg. 3 months leading to the event)
+- Compute top statistics for each rider participating in the event
+- Predict the race winner as the rider with most wins leading up to event, or as some kind of weighted average of wins, top 3s, top 5s, etc.
+
+Below are some results for the Giro 2021 with a sample of riders from the startlist:
+
+<p align="center">
+  <img width="600" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/giro_expert_1.png">
+</p>
+<p align="center">
+  <img width="600" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/master/media/giro_expert_2.png">
+</p>
+<p align="center">
+  <em>Figure 6</em>
+</p>
+
+Not surprisingly, we see that a naive model such as this one would predict riders with many victories as a potential Grand Tour winner. Figure 6 shows that Tim Merlier or Peter Sagan have equal or better chances than Egan Bernal to win this race. We thus see the clear limitations of such a model which doesn't take into account rider specialities (a climber vs a sprinter) or equivalently types of wins (sprint, mountain stage, etc.). 
+
+Building on this simple model, we can start to incorporate useful information about stages themselves (eg. length, elevation), as well as rider information (number of racedays in seasons, top statistics in season, type of wins, past results in race, injuries, weight, and other relevant KPIs) for more advanced models. Going even further, I could think about incorporating live data such as the current stage weather.
+
+The intuition is that:
 
 - previous results from past seasons can help the model to reason about what type of races the rider excels in.
 - current season results can help reason about the rider's current form.
 - weather data can help indicate how tough a race will be, and if the rider has benefited from adverse weather conditions in the past.
 
-The type of model to generate baseline results will a classical ML model. It is most likely unfeasible to apply deep learning to this problem due to the small dataset size, but I will think of ways to augment the data.
+### Next Models: 
+
+to generate more baseline results, I will implement linear regression to generate scores (potential to win the race). I will also implement some multinomial regression to predict categories instead of scores or positions (win, top3, top5, etc.). Then I will implement regression/classification trees, RF, bagging, boosting, etc. It is most likely unfeasible to apply deep learning to this problem due to the small dataset size, but I will think of ways to augment the data.
 
 # Modelling 3
 The idea is to prepare a race calendar for professional teams wanting to avoid relegation from the World Tour or to progress up to the higher racing category by gaining enough UCI points per season. The model will be akin to the 'Knapsack' problem where one has to select the optimal combination of elements given a budget. The task here will be to target (select) the optimal races given UCI points on offer to optimize chances of gaining enough points in a season based on rider speciality and past results in a given team.
