@@ -97,7 +97,7 @@ For (2), we can extract cross-sectional features of many successful riders and r
 A series of prediction models will be built to try and predict final race classification for a given rider. Starting with a so-called "Expert model", the idea is to build more powerful models which can incorporate more and more useful data.
 
 ### The Expert Model
-This model relies on hand-crafted features: number of wins, top 3s, top 5s, etc. which are computed for a given rider during a pre-specified timeframe. The workflow goes as follows:
+This model is inspired by this [blog post](https://brunogregory.medium.com/predicting-winners-in-cycling-races-with-machine-learning-b3d7f1126513) blog post and relies on hand-crafted features: number of wins, top 3s, top 5s, etc. which are computed for a given rider during a pre-specified timeframe. The workflow goes as follows:
 
 - Select an event (eg. Giro d'Italia 2021)
 - Get the rider startlist
