@@ -93,6 +93,21 @@ For (1), we can for example compare trends in UCI rankings progression or season
 
 For (2), we can extract cross-sectional features of many successful riders and run a clustering algoritm to determine what features contribute to a rider's success. A comparison can then be made with a candidate rider.
 
+Below are some first results with data from Milan - San Remo 2022. Using data from riders competing in this edition of MSR (PCS career points, GC points, Classics points, TT points, Climbers points, Sprinters points, Height and Weigth), I ran a clustering algorithm (K-Means) with 3 pre-specified clusters (cluster 0: poor career results, cluster 1: intermediate career results, cluster 2: excellent career results) on the data. Reducing the dimensionality of the features to 2D via t-SNE allows to visually inspect how sucess trends are established. Table 1 and Figure 6 illustrate these results. Wee see a cluster of high-performing athletes on the top right (yellow, cluster 2), whereas the majority of the remaining athletes are distributed among cluster 0 and 1. By extending this analysis to a larger sample of riders and refining the features, we can use this model to make predictions about neopro riders and their potential.
+
+<p align="center">
+  <img width="600" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/oldmac/media/plot_tsne_msr_2022.png">
+</p>
+<p align="center">
+  <em>Figure 6</em>
+</p>
+<p align="center">
+  <img width="600" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/oldmac/media/df_tsne_msr_2022.png">
+</p>
+<p align="center">
+  <em>Table 1</em>
+</p>
+
 # Modelling 2: Predict Race Winners
 A series of prediction models will be built to try and predict final race classification for a given rider. Starting with a so-called "Expert model", the idea is to build more powerful models which can incorporate more and more useful data.
 
@@ -114,7 +129,7 @@ Below are some results for the Giro 2021 with a sample of riders from the startl
   <img width="600" height="300" src="https://github.com/K-Schubert/TdF-Winners/blob/oldmac/media/giro_expert_2.png">
 </p>
 <p align="center">
-  <em>Figure 6</em>
+  <em>Figure 7</em>
 </p>
 
 Not surprisingly, we see that a naive model such as this one would predict riders with many victories as a potential Grand Tour winner. Figure 6 shows that Tim Merlier or Peter Sagan have equal or better chances than Egan Bernal to win this race. We thus see the clear limitations of such a model which doesn't take into account rider specialities (a climber vs a sprinter) or equivalently types of wins (sprint, mountain stage, etc.). 
