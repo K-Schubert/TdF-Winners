@@ -3,6 +3,12 @@ This project was initially started during my studies with R. The idea was to scr
 
 More recently, I've revisited this project with Python. Below you will find the new objectives and implementation. I'd like to share the final project as an interactive dashboard to be able to visualize results, queries, predictions, etc.
 
+# Tasks
+- [] Download race results for 2021 based on 2021 calendar
+- [] Download race kpi stats for 2021
+- [] Download rider startlists for 2021
+- [] Download race stats for 2021
+
 # Objectives
 The main objectives are:
 
