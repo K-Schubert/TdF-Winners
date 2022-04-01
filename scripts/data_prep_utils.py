@@ -90,6 +90,9 @@ def clean_data(df, rider_name, year, save=False):
     df.loc[idx, 'RaceName'] = df.Race[idx]
     df = getStageRaceName(df)
 
+    # define circuit col
+    df['Circuit'] = [re.search('\((.*)\)', x).group(1) for x in df.RaceName]
+
     # get date for final classifications
     df = getClassificationDate(df)
 
